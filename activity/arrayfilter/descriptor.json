@@ -1,0 +1,24 @@
+{
+  "name":"tibco-arrayfilter",
+  "type":"flogo:activity",
+  "version":"0.0.1",
+  "title":"Array Filtedr",
+  "description":"Array Filter",
+  "homepage":"https://github.com/lixingwang/flogo-contrib.git",
+  "input":[
+    {
+      "name":"array",
+      "type":"array"
+    },
+    {
+      "name":"expression",
+      "type":"string"
+    }
+  ],
+  "output":[
+    {
+      "name":"outputarray",
+      "type":"array"
+    }
+  ]
+}
