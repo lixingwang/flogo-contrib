@@ -90,7 +90,7 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 	}
 	out := output["input"]
 	s, _ := json.Marshal(out)
-	fmt.Println(string(s))
+	ctx.Logger().Debugf("Output: %s", string(s))
 	ctx.SetOutput("outputarray", out)
 	return true, nil
 }
