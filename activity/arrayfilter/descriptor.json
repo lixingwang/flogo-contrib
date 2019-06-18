@@ -2,7 +2,7 @@
   "name":"tibco-arrayfilter",
   "type":"flogo:activity",
   "version":"0.0.1",
-  "title":"Array Filtedr",
+  "title":"Array Filter",
   "description":"Array Filter",
   "homepage":"https://github.com/lixingwang/flogo-contrib.git",
   "input":[
