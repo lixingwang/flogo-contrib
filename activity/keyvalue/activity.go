@@ -13,6 +13,10 @@ type Input struct {
 	Object map[string]interface{} `md:"object"` // The message to log
 }
 
+type Output struct {
+	Output []interface{} `md:"output"` // The result of the counter operation
+}
+
 func (i *Input) ToMap() map[string]interface{} {
 	return map[string]interface{}{
 		"object": i.Object,
@@ -29,7 +33,7 @@ func (i *Input) FromMap(values map[string]interface{}) error {
 	return nil
 }
 
-var activityMd = activity.ToMetadata(&Input{})
+var activityMd = activity.ToMetadata(&Input{}, &Output{})
 
 // Activity is an Activity that is used to log a message to the console
 // inputs : {message, flowInfo}
@@ -57,6 +61,9 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 		keyValueMapArray = append(keyValueMapArray, m)
 	}
 
-	ctx.SetOutput("output", keyValueMapArray)
+	err = ctx.SetOutput("output", keyValueMapArray)
+	if err != nil {
+		panic(err)
+	}
 	return true, nil
 }

@@ -1,4 +1,4 @@
-module github.com/lixingwang/flogo-contrib/activity/arrayfilter
+module github.com/lixingwang/flogo-contrib/activity/keyvalue
 
 require (
 	github.com/project-flogo/core v0.9.2
