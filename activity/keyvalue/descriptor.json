@@ -1,0 +1,20 @@
+{
+  "name":"tibco-tokeyvalue",
+  "type":"flogo:activity",
+  "version":"0.0.1",
+  "title":"To Key-Value Pair",
+  "description":"To Key-Value Pair",
+  "homepage":"https://github.com/lixingwang/flogo-contrib/tree/master/activity/keyvalue",
+  "input":[
+    {
+      "name":"object",
+      "type":"object"
+    }
+  ],
+  "output":[
+    {
+      "name":"output",
+      "type":"array"
+    }
+  ]
+}

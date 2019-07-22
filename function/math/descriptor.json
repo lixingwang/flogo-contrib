@@ -1,0 +1,27 @@
+{
+    "name": "math",
+    "type": "flogo:function",
+    "version": "0.0.1",
+    "title": "math",
+    "description": "math function",
+    "functions": [{
+            "name": "add",
+            "description": "Converts the input to an integer.",
+            "example": "number.int64(\"123\")\nReturns\n123",
+            "args": [{
+                "name": "num1",
+                "type": "int"
+            },
+              {
+                "name": "num2",
+                "type": "int"
+              }],
+            "return": {
+                "type": "int"
+            },
+            "display": {
+                "visible": true
+            }
+        }
+    ]
+}
