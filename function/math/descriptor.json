@@ -7,7 +7,7 @@
     "functions": [{
             "name": "add",
             "description": "Converts the input to an integer.",
-            "example": "number.int64(\"123\")\nReturns\n123",
+            "example": "math.add(1,2)\nReturns\n3",
             "args": [{
                 "name": "num1",
                 "type": "int"

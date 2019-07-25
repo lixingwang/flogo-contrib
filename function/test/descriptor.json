@@ -1,0 +1,32 @@
+{
+    "name": "test",
+    "type": "flogo:function",
+    "version": "0.0.1",
+    "title": "test",
+    "description": "test function",
+    "functions": [{
+            "name": "concat",
+            "description": "Concat two string with sperator",
+            "example": "test.concat(\"hello\", \"-\", \"tibco\",)\nReturns\nhello-tibco",
+            "args": [{
+                "name": "str1",
+                "type": "string"
+            },
+              {
+                "name": "operator",
+                "type": "string"
+              },
+              {
+                "name": "str2",
+                "type": "string"
+              }
+            ],
+            "return": {
+                "type": "string"
+            },
+            "display": {
+                "visible": true
+            }
+        }
+    ]
+}

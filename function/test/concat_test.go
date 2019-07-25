@@ -7,14 +7,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-var in = &fnAdd{}
+var in = &fnConcat{}
 
 func init() {
 	function.ResolveAliases()
 }
 
 func TestInt64Sample(t *testing.T) {
-	final, err := in.Eval(123, 456)
+	final, err := in.Eval("123", "-", "456")
 	assert.Nil(t, err)
-	assert.Equal(t, int(579), final)
+	assert.Equal(t, "123-456", final)
 }
