@@ -1,0 +1,135 @@
+{
+  "name": "math",
+  "type": "flogo:function",
+  "version": "0.0.1",
+  "title": "datetimeinfo",
+  "description": "sub 2 datetime function",
+  "functions": [
+    {
+      "name": "subDays",
+      "description": "Subtraction 2 datetimes and return range by days",
+      "example": "datetimeinfo.subDays(\"2020-03-19T15:02:03\", \"2020-03-20T15:02:03\")  => 1",
+      "args": [
+        {
+          "name": "startDate",
+          "type": "string"
+        },
+        {
+          "name": "endDate",
+          "type": "string"
+        }
+      ],
+      "return": {
+        "type": "float64"
+      },
+      "display": {
+        "visible": true
+      }
+    },
+    {
+      "name": "subHours",
+      "description": "Subtraction 2 datetimes and return range by hours",
+      "example": "datetimeinfo.subHours(\"2020-03-19T15:02:03\", \"2020-03-20T15:02:03\")  => 24",
+      "args": [
+        {
+          "name": "startDate",
+          "type": "string"
+        },
+        {
+          "name": "endDate",
+          "type": "string"
+        }
+      ],
+      "return": {
+        "type": "float64"
+      },
+      "display": {
+        "visible": true
+      }
+    },
+,    {
+      "name": "subSeconds",
+      "description": "Subtraction 2 datetimes and return range by seconds",
+      "example": "datetimeinfo.subSeconds(\"2020-03-19T15:02:03\", \"2020-03-20T15:02:03\")  => 86400",
+      "args": [
+        {
+          "name": "startDate",
+          "type": "string"
+        },
+        {
+          "name": "endDate",
+          "type": "string"
+        }
+      ],
+      "return": {
+        "type": "float64"
+      },
+      "display": {
+        "visible": true
+      }
+    },
+    {
+      "name": "addDays",
+      "description": "Add days into exist datetime",
+      "example": "datetimeinfo.addDays(\"2020-03-19T15:02:03\", 3)  => 2020-03-22T15:02:03",
+      "args": [
+        {
+          "name": "datatime",
+          "type": "string"
+        },
+        {
+          "name": "days",
+          "type": "int"
+        }
+      ],
+      "return": {
+        "type": "string"
+      },
+      "display": {
+        "visible": true
+      }
+    },
+    {
+      "name": "addHours",
+      "description": "Add hours into exist datetime",
+      "example": "datetimeinfo.addHours(\"2020-03-19T15:02:03\", 3)  => 2020-03-19T18:02:03",
+      "args": [
+        {
+          "name": "datatime",
+          "type": "string"
+        },
+        {
+          "name": "hours",
+          "type": "int"
+        }
+      ],
+      "return": {
+        "type": "string"
+      },
+      "display": {
+        "visible": true
+      }
+    },
+    {
+      "name": "addSeconds",
+      "description": "Add seconds into exist datetime",
+      "example": "datetimeinfo.addSeconds(\"2020-03-19T15:02:03\", 30)  => 2020-03-19T18:02:33",
+      "args": [
+        {
+          "name": "datatime",
+          "type": "string"
+        },
+        {
+          "name": "seconds",
+          "type": "int"
+        }
+      ],
+      "return": {
+        "type": "string"
+      },
+      "display": {
+        "visible": true
+      }
+    }
+  ]
+}
