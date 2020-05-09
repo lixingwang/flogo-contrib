@@ -1,0 +1,31 @@
+{
+	"title": "ReplyToTrigger",
+	"name": "tibco-wi-replytotrigger",
+	"author": "TIBCO Software Inc.",
+	"type": "flogo:activity",
+	"version": "1.0.0",
+	"display": {
+		"visible": true,
+		"description": "Reply To Trigger Activity"
+	},
+	"feature": {
+		"iterator": {
+			"type": "iterator",
+			"enabled": false
+		}
+	},
+	"ref": "github.com/lixingwang/flogo-contrib/activity/actreply",
+	"inputs": [
+		{
+			"name": "input",
+			"type": "complex_object",
+			"display": {
+				"description": "An JSON data or schema for the input",
+				"type": "texteditor",
+				"syntax": "json",
+				"name": "Input Schema",
+				"mappable": true
+			}
+		}
+	]
+}
