@@ -20,7 +20,7 @@
 			"name": "input",
 			"type": "complex_object",
 			"display": {
-				"description": "An JSON data or schema for the input",
+				"description": "Copy schema from flow output",
 				"type": "texteditor",
 				"syntax": "json",
 				"name": "Input Schema",
