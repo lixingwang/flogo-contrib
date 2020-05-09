@@ -130,6 +130,38 @@
       "display": {
         "visible": true
       }
+    },
+    {
+      "name": "sub",
+      "description": "Subtract the given number of years, months and days from the DateTime",
+      "example": "datetime.sub(datetime.current(), 1,1,1) => 2019-03-26T16:38:55.345876511Z",
+      "args": [
+        {
+          "name": "datetime",
+          "type": "datetime"
+        },
+        {
+          "name": "years",
+          "type": "int",
+          "value":0
+        },
+        {
+          "name": "months",
+          "type": "int",
+          "value":0
+        },
+        {
+          "name": "days",
+          "type": "int",
+          "value":0
+        }
+      ],
+      "return": {
+        "type": "datetime"
+      },
+      "display": {
+        "visible": true
+      }
     }
   ]
 }
