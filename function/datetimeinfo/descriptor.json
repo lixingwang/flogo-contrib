@@ -157,7 +157,7 @@
         }
       ],
       "return": {
-        "type": "datetime"
+        "type": "string"
       },
       "display": {
         "visible": true

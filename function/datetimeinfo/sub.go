@@ -49,6 +49,6 @@ func (s *fnSub) Eval(in ...interface{}) (interface{}, error) {
 	year, month, day := datetime.Date()
 	hour, min, sec := datetime.Clock()
 	newDate := time.Date(year-years, month-time.Month(months), day-days, hour, min, sec, datetime.Nanosecond(), datetime.Location())
-	return newDate, nil
+	return newDate.Format(FORMAT), nil
 
 }
