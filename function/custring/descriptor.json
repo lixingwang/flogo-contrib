@@ -1,0 +1,29 @@
+{
+    "name": "custring",
+    "type": "flogo:function",
+    "version": "0.0.1",
+    "title": "math",
+    "description": "math function",
+    "functions": [{
+            "name": "join",
+            "description": "concatenates the elements of its first argument to create a single string.",
+            "example": "custring.join(array,\";\")\nReturns\n3",
+            "args": [
+              {
+                "name": "array",
+                "type": "array",
+                "valueType": "any"
+              },
+              {
+                "name": "sep",
+                "type": "string"
+              }],
+            "return": {
+                "type": "string"
+            },
+            "display": {
+                "visible": true
+            }
+        }
+    ]
+}
