@@ -1,0 +1,21 @@
+{
+  "name": "flogo-updobject",
+  "type": "flogo:activity",
+  "version": "0.10.0",
+  "title": "Update Object Value",
+  "description": "Update the values of an object",
+  "homepage": "https://github.com/project-flogo/contrib/tree/master/activity/updobject",
+  "input": [
+    {
+      "name": "object",
+      "type": "object",
+      "description": "The object to update"
+    },
+    {
+      "name": "fields",
+      "type": "array",
+      "value": " {\"$schema\": \"http://json-schema.org/draft-07/schema#\",\"items\": { \"properties\": { \"name\": { \"type\": \"string\"}, \"value\": {  \"type\": \"any\"} }, \"type\": \"object\" }, \"type\": \"array\"}",
+      "description": "The values to update or add"
+    }
+  ]
+}
