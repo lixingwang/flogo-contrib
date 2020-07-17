@@ -1,6 +1,7 @@
 package math
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/project-flogo/core/data"
 	"github.com/project-flogo/core/data/coerce"
@@ -41,6 +42,7 @@ func (s *fnAddDays) Eval(in ...interface{}) (interface{}, error) {
 		panic(err)
 	}
 
+	json.Unmarshal()
 	newT := t.Add(time.Duration(days) * time.Hour * 24)
 	return newT.Format(FORMAT), nil
 
