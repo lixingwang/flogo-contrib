@@ -1,0 +1,23 @@
+{
+    "name": "decoder",
+    "type": "flogo:function",
+    "version": "0.0.1",
+    "title": "decoder",
+    "description": "decoder function",
+    "functions": [{
+            "name": "decodeNumberToString",
+            "description": "Convert data by convert int to string",
+            "example": "decoder.decodeNumberToString(JsonWithNumber)\nReturns\nJsonWithString",
+            "args": [{
+                "name": "data",
+                "type": "any"
+            }],
+            "return": {
+                "type": "any"
+            },
+            "display": {
+                "visible": true
+            }
+        }
+    ]
+}
